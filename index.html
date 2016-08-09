@@ -3,7 +3,6 @@
 <title>Sarah Jee</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-		
 <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -11,36 +10,98 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 <style>
+
+	li{
+		list-style-type: none;
+	}
 	ul#contact-info li{
 		display:inline;
+	}
+	.img-circle{
+		border-radius: 50%;
+	}
+	#top{
+		padding-top: 100px;
+		height:500px;
+		background-color: green;
+	}
+	#resume{
+		padding-top:50px;
+		height:500px;
+		color:#fff;
+		background-color: red;
+	}
+	#contact{
+		padding-top:50px;
+		height:100px;
+		color:#fff;
+		background-color: #673ab7;
+	}	
+	.right{
+		float: right;
+		padding-right:250px;
 	}
 </style>
 
 <!-- The scrollable area -->
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar">
 
 <!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
 	<nav class="navbar navbar-inverse navbar-fixed-top">
   		<ul class="nav navbar-nav">
-    		<li><a href="#about">Section 1</a></li>
+    		<li><a href="#resume">Resume</a></li>
+    		<li><a href="#contact">Contact</a></li>
     	</ul>
 	</nav>
 
-	<div id="row">
+	<!-- 	<div id="row">
 		<img class="profilePic img-circle" src="images/sarah.jpg" width="200" height="200">
 		<h1>Sarah Jee</h1>
-	</div>
+	</div> -->
 	<!-- Section 1 -->
-	<div id="about">
-		<li><i class="fa-il fa fa-university fa-3x fa-fw"></i>
-        The University of Texas at Austin</li>
+	<div id="top" style="text-align: center">
+		<img class="profilePic img-circle" src="images/sarah.jpg" width="200" height="200">
+		<h1>Sarah Jee</h1>		
 	</div>
 
-	<div id="#section-contact">
+	<div id="resume">
+		<h1 style="text-align: center">Resume</h1>
+		<div id="education" style="padding-left:200px">
+			<h3>Education</h3>
+			<p>
+				<b>The University of Texas at Austin</b>
+	        	<span class="right"><i>May 2018</i></span>
+	        	<br>
+	       		<b>Bachelor of Science in Computer Science</b>
+	       		<span class="right"><i>Austin, TX</i></span>
+	       		<br>
+	       		<i style="padding-left:40px">GPA: 3.79</i>
+       		</p>
+       		<p>
+       			<p>Completed Courses:</p>
+       			<ul id="completed-courses">
+       				<li>Data Structures</li>
+       				<li>Discrete Math</li>
+       				<li>Computer Organization &amp; Architecture</li>
+       				<li>Matrices</li>
+       				<li>Principles of Computer Systems</li>
+       				<li>Introduction to Probability &amp; Statistics</li>
+       				<li>Software Engineering</li>
+       			</ul>
+       			<p>Current Courses:</p>
+       			<ul id="current-courses">
+       				<li>Big Data Programming</li>
+       				<li>Algorithms &amp; Complexity</li>
+       			</ul>
+       		</p>
+		</div>
+	</div>
+
+	<div id="contact" style="text-align:center">
 		<ul id="contact-info">
 			<li class="contact-li-item"><a href="https://github.com/swj339"><i class="fa fa-github fa-2x"></i></a></li>
 			<li class="contact-li-item"><a href="https://linkedin.com/in/sarah-jee-339a97107"><i class="fa fa-linkedin fa-2x"></i></a></li>
-			<li class="contact-li-item"><a href="documents/Jee_Sarah_Resume.pdf"><i class="fa fa-github fa-2x"></i></a></li>
+			<li class="contact-li-item"><a href="documents/Jee_Sarah_Resume.pdf"><i class="fa fa-file-text-o fa-2x"></i></a></li>
 		</ul>
 	</div>
 </body>
