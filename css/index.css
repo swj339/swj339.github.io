@@ -1,0 +1,34 @@
+	body{
+		color: black;
+		font-family: 'Montserrat',serif;
+	}
+	li{
+		list-style-type: none;
+	}
+	ul#contact-info li{
+		display:inline;
+	}
+	.img-circle{
+		border-radius: 50%;
+	}
+	#top{
+		padding-top: 100px;
+		height:500px;
+		background-color: green;
+	}
+	#resume{
+		padding-top:50px;
+		height:500px;
+		color:#fff;
+		background-color: red;
+	}
+	#contact{
+		padding-top:50px;
+		height:100px;
+		color:#fff;
+		background-color: #673ab7;
+	}	
+	.right{
+		float: right;
+		padding-right:250px;
+	}
